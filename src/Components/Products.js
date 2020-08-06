@@ -1,40 +1,30 @@
 import React from 'react'
-import oxygen from '../oxygen.png'
-import firstaidkit from '../firstaidkit.png'
+import oxygen from '../images/oxygen.png'
+import firstaidkit from '../images/firstaidkit.png'
+import gas from '../images/gas.png'
+import Chemistry from '../images/chemistry.png'
+
 import './Products.css'
+import ProductCard from './ProductCard'
 
 function Products() {
+
+    const productslist = [
+        { id:1, product_title:"Medical Oxygen",product_image:oxygen,},
+        { id:2, product_title:"Medical kit o2",product_image:firstaidkit},
+        { id:3, product_title:"Industrial Gases",product_image:gas},
+        { id:4, product_title:"Chemicals",product_image:Chemistry},
+        { id:5, product_title:"Medical kit o2",product_image:oxygen},
+        { id:6, product_title:"Medical kit o2",product_image:oxygen},
+        { id:7, product_title:"Medical kit o2",product_image:oxygen},
+    ]
+
+    const getproduct = productslist.map( product => <ProductCard  key={ product.id} product={product}></ProductCard>)
+
     return (
-        <div class="container ">
+        <div class="container">
             <div class = 'row'>
-                <div class="col-lg">
-                    <div class="card" >
-                        <img class="card-img-top" src={oxygen} alt="Card image cap"/>
-                        <div class="card-body">
-                            <h3 class="card-title">Medical Oxygen</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card" >
-                        
-                        <img class="card-img-top" src={firstaidkit} alt="Card image cap"/>
-                        <div class="card-body">
-                            <h3 class="card-title">Medical O2 kit</h3>
-                            <a href="#" class="btn btn-lg">Refill</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card" >
-                        <img class="card-img-top" src={oxygen} alt="Card image cap"/>
-                        <div class="card-body">
-                            <h3 class="card-title">Medical Oxygen</h3>
-                            
-                        </div>
-                    </div>
-                </div>
+                {getproduct}
             </div> 
         </div>
     )

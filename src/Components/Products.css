@@ -11,6 +11,8 @@
         margin: 1em 1em 1em 1em;
         border-radius: 3em;
         box-shadow: 0 0 2px #ac171a;
+        min-width: 8em;
+        
     }
 .card:hover {
     transition: 5ms;
@@ -18,9 +20,5 @@
    
 } 
 
-.card-img-top { width:10em;}
+.card-img-top { width:fit-content}
 
-.btn { 
-    color:  #ac171a ;
-    border-radius: 3em;
-    box-shadow: 0 0 2px #ac171a; }
