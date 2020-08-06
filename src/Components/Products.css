@@ -1,0 +1,26 @@
+
+.row {  margin-top: 2em;
+        
+        padding: auto;
+        
+    }
+
+
+.card { 
+        align-items: center;
+        margin: 1em 1em 1em 1em;
+        border-radius: 3em;
+        box-shadow: 0 0 2px #ac171a;
+    }
+.card:hover {
+    transition: 5ms;
+    box-shadow: 0 0 5px #ac171a;
+   
+} 
+
+.card-img-top { width:10em;}
+
+.btn { 
+    color:  #ac171a ;
+    border-radius: 3em;
+    box-shadow: 0 0 2px #ac171a; }
