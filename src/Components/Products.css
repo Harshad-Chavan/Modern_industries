@@ -8,10 +8,12 @@
 
 .card { 
         align-items: center;
-        margin: 1em 1em 1em 1em;
+        margin: 1em;
+        padding: 0.5em;
         border-radius: 3em;
         box-shadow: 0 0 2px #ac171a;
-        min-width: 8em;
+        min-width: 23em;
+        max-width: 50em;
         
     }
 .card:hover {
@@ -20,5 +22,5 @@
    
 } 
 
-.card-img-top { width:fit-content}
+.card-img-top { width:auto;}
 

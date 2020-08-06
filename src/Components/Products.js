@@ -16,17 +16,17 @@ function Products() {
         { id:4, product_title:"Chemicals",product_image:Chemistry},
         { id:5, product_title:"Medical kit o2",product_image:oxygen},
         { id:6, product_title:"Medical kit o2",product_image:oxygen},
-        { id:7, product_title:"Medical kit o2",product_image:oxygen},
+        
     ]
 
     const getproduct = productslist.map( product => <ProductCard  key={ product.id} product={product}></ProductCard>)
 
     return (
-        <div class="container">
-            <div class = 'row'>
+        
+            <div class = 'card-deck'>
                 {getproduct}
             </div> 
-        </div>
+
     )
 }
 

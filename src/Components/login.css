@@ -1,0 +1,80 @@
+.main-content{
+    width: 60%;
+    border-radius: 20px;
+	margin: 3em auto;
+    display: flex;
+    
+}
+.company__info{
+	background-color: #008080;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 700px) {
+	.main-content{width: 70%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 640px) and (max-width:700px){
+	.main-content{width: 70%;}
+}
+.row > a{
+	color:#f51d20;
+}
+
+.login_form{
+	/* background-color: rgb(221, 80, 80); */
+	border-radius:20px;
+	border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    margin: auto;
+    box-shadow: 0 5px 5px rgba(0,0,0,.4);
+    background-color: #fefefe;
+}
+form{
+    padding: 0 2em;
+    margin: auto;
+}   
+.form__input{
+	width: 100%;
+	border-radius: 20px;
+	border: 1px solid #fa4043;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	box-shadow: 0 0 5px #f51d20; 
+	border-radius: 4px;
+}
+.btn{
+	transition: all .2s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#fff;
+	font-weight: 600;
+	background-color:#fa4043;
+	border: 1px solid #f51d20;
+	margin: auto;
+	margin-bottom: 1em;
+}
+.btn:hover, .btn:focus{
+	background-color: #f51d20;
+	color:#fff;
+}
+
+.logo { margin: 1em auto;}
